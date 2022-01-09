@@ -1,0 +1,1440 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(RobotoSlab-VariableFont_wght.ttf);
+
+}
+@font-face {
+    font-family: "Lora";
+    src: url(Lora-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Lora Var';
+    src: url(Lora-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+.main-page{
+    height: 800px;
+    background: url(../img/6.jpg) center center/cover no-repeat;
+
+    
+    
+   
+}
+.dirpopup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0,0,0,0.5);
+   opacity: 0;
+   pointer-events: none;
+   transition: 0.5s all;
+}
+.dirpopup.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+
+}
+
+
+.cloud2 {
+    width: 103px;
+    height: 100px;
+    background: url(../img/cloud.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 44.3%;
+    right: 45.74%;
+    top: 23.5%;
+    bottom: 64%;
+    transition: 0.5s;
+    
+}
+.cloud2:hover {
+    transform: scale(1.1);
+  }
+
+.cloud3 {
+    width: 103px;
+    height: 100px;
+    background: url(../img/cloud.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    position: absolute;
+    left: 60.21%;
+    right: 27.84%;
+    top: 41%;
+    bottom: 47.14%;
+    transition: 0.5s;
+    
+}
+.cloud3:hover {
+    transform: scale(1.1);
+  }
+
+.cloud4 {
+    width: 103px;
+    height: 100px;
+    background: url(../img/cloud.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 57.73%;
+    right: 31.31%;
+    top: 74.62%;
+    bottom: 10.88%;
+    transition: 0.5s;
+}
+
+.cloud4:hover {
+    transform: scale(1.1);
+  }
+
+.cloud5 {
+    width: 103px;
+    height: 100px;
+    background: url(../img/cloud.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 32.44%;
+    right: 59.6%;
+    top: 74.62%;
+    bottom: 10.8%;
+    transition: 0.5s;
+}
+
+.cloud5:hover {
+    transform: scale(1.1);
+  }
+
+.cloud6 {
+    width: 103px;
+    height: 100px;
+    background: url(../img/cloud.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 28.8%;
+    right: 63.98%;
+    top: 41.21%;
+    bottom: 46.29%;
+    transition: 0.5s;
+    
+}
+.cloud6:hover {
+    transform: scale(1.1);
+  }
+
+.popupib{
+    width: 700px;
+    height: 450px;
+    background: url(../img/infblock.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    padding: 25px;
+    transition: 0.5s all;
+
+}
+.popupib.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.5s all;
+
+
+}
+
+
+.ib {
+    position: absolute;
+    left: 15.35%;
+    right: 15.35%;
+    top: -0.64%;
+    bottom: 87.24%;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #000000;
+}
+.infoib {
+    width: 620px;
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 10.85%;
+    bottom: 8.35%;
+    
+    vertical-align: 10%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+.spib {
+    position: absolute;
+    left: -3.43%;
+    right: 2.43%;
+    top: 40.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+
+}
+
+.ib1 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 50.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.ib2 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 56.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.ib3 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 62.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.ib4 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 68.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.ib5 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 74.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.exit {
+    width: 50px;
+    height: 50px;
+    top: 82%;
+    left: 85%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.popupisit{
+    width: 700px;
+    height: 450px;
+    background: url(../img/infblock.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    padding: 25px;
+    transition: 0.5s all;
+
+}
+.popupisit.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.5s all;
+
+}
+
+.isit {
+    position: absolute;
+    left: 4.35%;
+    right: 15.35%;
+    top: -0.64%;
+    bottom: 87.24%;
+    width: 620px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #000000;
+}
+
+.infoisit {
+    width: 620px;
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 10.85%;
+    bottom: 8.35%;
+    
+    vertical-align: 10%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+.spisit {
+    position: absolute;
+    left: -3.43%;
+    right: 2.43%;
+    top: 51.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+
+}
+.isit1 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 62.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.isit2 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 68.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.isit3 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 74.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.isit4 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 80.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.exit1 {
+    width: 50px;
+    height: 50px;
+    top: 82%;
+    left: 85%;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.popuppive{
+    width: 700px;
+    height: 450px;
+    background: url(../img/infblock.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    padding: 25px;
+    transition: 0.5s all;
+
+}
+.popuppive.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.5s all;
+
+}
+
+
+.pive {
+    position: absolute;
+    left: 6.35%;
+    right: 15.35%;
+    top: -0.64%;
+    bottom: 87.24%;
+    width: 587px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #000000;
+}
+.infopive {
+    width: 620px;
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 10.85%;
+    bottom: 8.35%;
+    
+    vertical-align: 10%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+.sppive {
+    position: absolute;
+    left: -3.43%;
+    right: 2.43%;
+    top: 46.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+
+}
+
+.pive1 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 56.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.pive2 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 62.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.pive3 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 68.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.pive4 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 74.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.pive5 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 80.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.exit3 {
+    width: 50px;
+    height: 50px;
+    top: 82%;
+    left: 85%;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.popuppi{
+    width: 700px;
+    height: 450px;
+    background: url(../img/infblock.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    padding: 25px;
+    transition: 0.5s all;
+
+}
+.popuppi.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.5s all;
+
+}
+
+
+.pi {
+    position: absolute;
+    left: 20.35%;
+    right: 15.35%;
+    top: -0.64%;
+    bottom: 87.24%;
+    width: 500px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #000000;
+}
+.infopi {
+    width: 620px;
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 10.85%;
+    bottom: 8.35%;
+    
+    vertical-align: 10%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+
+.sppi {
+    position: absolute;
+    left: -3.43%;
+    right: 2.43%;
+    top: 40.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+
+}
+
+.pi1 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 50.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.pi2 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 56.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.pi3 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 62.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.pi4 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 68.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.exit4 {
+    width: 50px;
+    height: 50px;
+    top: 82%;
+    left: 85%;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+
+.header {
+    
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-container {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Lora Var';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.popupisip{
+    width: 700px;
+    height: 450px;
+    background: url(../img/infblock.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    padding: 25px;
+    transition: 0.5s all;
+
+}
+.popupisip.active{
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.5s all;
+
+}
+
+.isip {
+    position: absolute;
+    left: 2.65%;
+    right: 15.35%;
+    top: -0.64%;
+    bottom: 87.24%;
+    width: 635px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.infoisip {
+    width: 620px;
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 10.85%;
+    bottom: 8.35%;
+    
+    vertical-align: 10%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+}
+.spisip {
+    position: absolute;
+    left: -3.43%;
+    right: 2.43%;
+    top: 62.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+
+}
+.isip1 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 73.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.isip2 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 79.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+
+.isip3 {
+    position: absolute;
+    left: 2.43%;
+    right: 2.43%;
+    top: 85.85%;
+    bottom: 8.35%;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    
+
+}
+.exit2 {
+    width: 50px;
+    height: 50px;
+    top: 82%;
+    left: 85%;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 100px;
+    font-weight: bold;
+    transition:0.5s all;
+    margin-top: 100px;
+}
+.logo{
+    margin-right: 80px;
+    transition:1s all;
+}
+
+.logo:hover{
+    transform:scale(1.2);
+         
+}
+
+a:hover{
+    color:#FACC2A;
+}
+
+
+
+
+h1{
+    color: #fff;
+    font-family: 'Roboto';
+    text-indent:223px;
+    margin-top: 66px;
+    margin-bottom: -10px;
+    font-size: 50px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    font-weight: bold;
+}
+
+.it {
+    color: #fff;
+    font-family: 'Roboto';
+    text-indent:223px;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-left: 0;
+    
+
+}
+ .inf{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 223px;
+    padding-right: 700px;
+    border-left: 100px;
+    
+   
+    
+}
+
+.ibcl{
+    color: #fff;
+    position: absolute;
+    left: 46.7%;
+    right: 48.14%;
+    top: 23.9%;
+    bottom: 72%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.9206px;
+    line-height: 32px;
+    transition: 0.5s;
+}
+
+.ibcl:hover {
+    transform: scale(1.1);
+}
+
+.isitcl{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 62.1%;
+    right: 28.57%;
+    top: 41.11%;
+    bottom: 54.15%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.9206px;
+    line-height: 32px;
+    transition: 0.5s;
+   
+}
+.isitcl:hover {
+    transform: scale(1.1);
+}
+
+.isipcl{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 59.3%;
+    right: 32.04%;
+    top: 73.8%;
+    bottom: 19.09%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.9206px;
+    line-height: 32px;
+    transition: 0.5s;
+
+
+}
+
+.isipcl:hover {
+    transform: scale(1.1);
+}
+.pivcl{
+    position: absolute;
+    left: 34.0%;
+    right: 60.33%;
+    top: 72.6%;
+    bottom: 18.1%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.9206px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.pivcl:hover {
+    transform: scale(1.1);
+}
+
+.picl {
+    color: #fff;
+    position: absolute;
+   
+    left: 31.1%;
+    top: 37%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.9206px;
+    line-height: 32px;
+    transition: 0.5s;
+}
+.picl:hover {
+    transform: scale(1.1);
+}
+.fit {
+    color: #fff;
+    position: absolute;
+    left: 43.8%;
+    right: 44.28%;
+    top: 54.06%;
+    bottom: 37.44%;
+    margin: auto;
+    font-family: 'Roboto Slab';
+    font-style: bold;
+    font-weight: bold;
+    font-size: 43.8941px;
+    line-height: 42px;
+    transition: 0.5s;
+
+}
+
+.fit:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+
+.el1 {
+    width: 200px;
+    height: 100px;
+    background: url(../img/Ellipse9.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 34.64%;
+    right: 30.11%;
+    top: 29.53%;
+    bottom: 6.74%
+    
+    
+
+}
+
+.el2{
+    width: 200px;
+    height: 200px;
+    background: url(../img/Ellipse10.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 32.5%;
+    right: 30.11%;
+    top: 54.53%;
+    bottom: 6.91%;
+    
+
+}
+
+.el3 {
+    width: 303px;
+    height: 100px;
+    background: url(../img/elips.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 40.5%;
+    right: 29.35%;
+    top: 83.5%;
+    bottom: 6.94%;
+    
+    
+
+}
+
+.el4 {
+    width: 203px;
+    height: 200px;
+    background: url(../img/Ellipse12.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 61.9%;
+    right: 30.11%;
+    top: 54.53%;
+    bottom: 6.91%;
+    
+
+
+}
+
+.el5 {
+    width: 203px;
+    height: 100px;
+    background: url(../img/Ellipse11.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 52.5%;
+    right: 32.11%;
+    top: 29.5%;
+    bottom: 6.91%;
+
+
+}
+
+
+
+.button {
+    display: inline-flex;
+    padding: 10px 47px;
+    width: 250px;
+    height: 60px;
+    background: #FACC2A;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 40px;
+    position: relative;
+    top: -10px;
+    left: 750px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    overflow: hidden;
+    
+}
+.button span {
+    position: relative;
+    z-index: 1;
+
+}
+.button::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    
+    height: 70px;
+    border-radius: 50%;
+    background: #87D4FF;
+    transition: width 0.5s, height 0.5s;
+
+}
+.button:hover::before {
+    width: 300px;
+    height: 300px;
+
+}
+
+.button:hover{
+    color:#000000;
+    transform:scale(1.1);
+    transition:1s all;
+
+}
+
+
+
+.content{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight:bolder;
+    text-align: center;
+    text-indent: 50px;
+    margin: 150px;
+}
+
+.map{
+    text-align: center;
+    padding-left: 700px;
+  
+} 
+
+
+.main_container{
+    display: flex;
+    justify-content:space-around; 
+
+    margin-top: 100px;
+}
+
+.contact h1{
+    text-align: center;
+    margin-right: 220px;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+
+.main-page2{
+    height: 930px;
+   
+    background: url(../img/7.jpg) center center/cover no-repeat;
+}
+
+.footer {
+    margin-top: 10%;
+    font-size: 24px;
+    margin-top: 2%;
+    background-color: rgb(20, 20, 20);
+    padding: 1%;
+}
+
+.footer-basic {
+    margin-top: 10%;
+    padding:10px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    background-color: rgb(20, 20, 20)
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    margin-left: 38%;
+
+    font-family: 'Roboto Slab';
+    list-style:none;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:0;
+    color: #FFFFFF;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+    color: #FACC2A;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+.footer-basic .social > a > .instagram{
+    height: 40px;
+    width: 35px;
+
+  }
+
+.footer-basic .social > a > .vk{
+    height: 40px;
+    width: 35px;
+
+  }
+
+.footer-basic .social > a > .fb{
+    height: 40px;
+    width: 32px;
+
+  }
+.footer-basic .social > a > .tik{
+    height: 40px;
+    width: 30px;
+
+  }
+
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+    color: #FACC2A;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+#particle_canvas {
+    width: 1544px;
+    height: 630px;
+}
+
+#particle_canvas1 {
+    width: 1544px;
+    height: 1px;
+}
+
+.footer-basic1 {
+    
+    padding:10px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    background-color: rgb(20, 20, 20)
+  }
+  
+  .footer-basic1 ul {
+    padding:0;
+    margin-left: 38%;
+
+    font-family: 'Roboto Slab';
+    list-style:none;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:0;
+    color: #FFFFFF;
+  }
+  
+  .footer-basic1 li {
+    padding:0 10px;
+  }
+  
+  .footer-basic1 ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic1 ul a:hover {
+    opacity:1;
+    color: #FACC2A;
+  }
+  
+  .footer-basic1 .social {
+    text-align:center;
+  }
+  
+  .footer-basic1 .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+.footer-basic1 .social > a > .instagram{
+    height: 40px;
+    width: 35px;
+
+  }
+
+.footer-basic1 .social > a > .vk{
+    height: 40px;
+    width: 35px;
+
+  }
+
+.footer-basic1 .social > a > .fb{
+    height: 40px;
+    width: 32px;
+
+  }
+.footer-basic1 .social > a > .tik{
+    height: 40px;
+    width: 30px;
+
+  }
+
+  .footer-basic1 .social > a:hover {
+    opacity:0.9;
+    color: #FACC2A;
+  }
+  
+  .footer-basic1 .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+
+
+
+
+
+
+    
+
